@@ -32,6 +32,10 @@ import RecurringBooking from "../pages/userPages/Accountpages/RecurringBooking";
 import PersonalInfo from "../pages/userPages/Accountpages/PersonalInfo";
 import Preferences from "../pages/userPages/Accountpages/Preferences";
 import Help from "../pages/userPages/Accountpages/Help";
+//Admin Panne;
+import AdminPannelLayout from "../layout/AdminPannelLayout";
+import AdminPannel from "../pages/AdminPannel";
+import AddService from "../pages/AdminPannel/AddService";
 
 const router = createBrowserRouter([
   {
@@ -161,6 +165,20 @@ const router = createBrowserRouter([
       {
         path: "/help-feedback",
         element: <Help />,
+      },
+    ],
+  },
+  {
+    path: "/admin-pannel",
+    element: <AdminPannelLayout />,
+    children: [
+      {
+        path: "/admin-pannel/",
+        element: <AdminPannel />,
+      },
+      {
+        path: "/admin-pannel/add-service",
+        element: <AddService />,
       },
     ],
   },
