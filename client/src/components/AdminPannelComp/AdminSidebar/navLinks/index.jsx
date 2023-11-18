@@ -6,6 +6,7 @@ import {
 const links = [
   //   { name: "Add Service", href: "/dashboard", icon: DashboardIcon },
   { name: "Add Service", href: "/admin-pannel/add-service" },
+  { name: "Cretae Blog", href: "/admin-pannel/add-service" },
 ];
 
 export default function NavLinks() {
