@@ -36,6 +36,8 @@ import Help from "../pages/userPages/Accountpages/Help";
 import AdminPannelLayout from "../layout/AdminPannelLayout";
 import AdminPannel from "../pages/AdminPannel";
 import AddService from "../pages/AdminPannel/AddService";
+import AllServices from "../pages/AdminPannel/AllServices";
+import CreacteBlog from "../pages/AdminPannel/CreateBlog";
 
 const router = createBrowserRouter([
   {
@@ -179,6 +181,14 @@ const router = createBrowserRouter([
       {
         path: "/admin-pannel/add-service",
         element: <AddService />,
+      },
+      {
+        path: "/admin-pannel/all-services",
+        element: <AllServices />,
+      },
+      {
+        path: "/admin-pannel/create-blog",
+        element: <CreacteBlog />,
       },
     ],
   },

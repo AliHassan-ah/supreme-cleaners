@@ -4,9 +4,9 @@ import {
   //  useLocation
 } from "react-router-dom";
 const links = [
-  //   { name: "Add Service", href: "/dashboard", icon: DashboardIcon },
   { name: "Add Service", href: "/admin-pannel/add-service" },
-  { name: "Cretae Blog", href: "/admin-pannel/add-service" },
+  { name: "All Services", href: "/admin-pannel/all-services" },
+  { name: "Cretae Blog", href: "/admin-pannel/create-blog" },
 ];
 
 export default function NavLinks() {
@@ -27,7 +27,7 @@ export default function NavLinks() {
             // )}
           >
             {/* <LinkIcon className="w-6" /> */}
-            <p className="hidden md:flex items-center !mb-0 text-[#7D7D7D] hover:text-[#131313] cursor-pointer">
+            <p className="hidden py-[16px] px-[10px] md:flex items-center !mb-0 text-[#7D7D7D] hover:text-[#131313] cursor-pointer">
               {link?.name}
             </p>
           </Link>
